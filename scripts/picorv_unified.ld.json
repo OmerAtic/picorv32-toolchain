@@ -1,0 +1,11 @@
+{
+  "_comment": "PicoRV32 birlesik bellek bolgesi: 8 KB BRAM, .text ve .data ayni RAM'de art arda yerlesir.",
+  "memory": [
+    { "name": "mem", "origin": 0, "length": 8192, "attrs": "rwx" }
+  ],
+  "sections": [
+    { "name": ".text", "memory": "mem", "align": 4 },
+    { "name": ".data", "memory": "mem", "align": 4 }
+  ],
+  "entry": 0
+}
