@@ -1,0 +1,23 @@
+# PicoRV32 Linker Map
+# Generated: 2026-05-10T17:17:49
+
+## Memory Regions
+  mem      0x00000000 .. 0x00001fff  (8192 bytes, rwx)
+
+## Section Layout
+  .text  (mem=mem)
+    0x00000000  size=128   B   main.o
+    0x00000080  size=48    B   math_lib.o
+  .data  (mem=mem)
+    0x000000b0  size=8     B   math_lib.o
+
+## Global Symbols
+  0x00000000  _start                   [.text]   main.o
+  0x00000080  add_func                 [.text]   math_lib.o
+  0x00000088  sub_func                 [.text]   math_lib.o
+  0x00000090  mul_func                 [.text]   math_lib.o
+  0x000000b0  pi_x100                  [.data]   math_lib.o
+  0x000000b4  magic_number             [.data]   math_lib.o
+
+## Entry Point
+  0x00000000

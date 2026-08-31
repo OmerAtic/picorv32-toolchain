@@ -1,0 +1,112 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "uart_lib.s",
+  "timestamp": "2026-05-10T17:17:49",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 208,
+      "data": "b70200109382420023a0a20067800000130101ff23261100232481002322910013040500b704001093844400830204006388020023a05400130414006ff01fff8320c10003248100832441001301010167800000130101ff2326110023248100232291002320210113040500b704001093844400130980001309f9ff130304009303090063880300135343009383f3ff6ff05fff1373f300130ea0006348c301130363ff130313066f0080001303030323a06400e31209fc8320c1000324810083244100032901001301010167800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "uart_putc",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 21
+    },
+    {
+      "name": "uart_puts",
+      "section": ".text",
+      "value": 16,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 30
+    },
+    {
+      "name": "puts_loop",
+      "section": ".text",
+      "value": 44,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 39
+    },
+    {
+      "name": "puts_done",
+      "section": ".text",
+      "value": 64,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 46
+    },
+    {
+      "name": "uart_put_hex32",
+      "section": ".text",
+      "value": 84,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 57
+    },
+    {
+      "name": "hex_loop",
+      "section": ".text",
+      "value": 120,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 68
+    },
+    {
+      "name": "shift_loop",
+      "section": ".text",
+      "value": 132,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 74
+    },
+    {
+      "name": "shift_done",
+      "section": ".text",
+      "value": 148,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 79
+    },
+    {
+      "name": "is_digit",
+      "section": ".text",
+      "value": 172,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 88
+    },
+    {
+      "name": "emit_char",
+      "section": ".text",
+      "value": 176,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 90
+    }
+  ],
+  "relocations": []
+}

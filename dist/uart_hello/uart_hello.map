@@ -1,0 +1,21 @@
+# PicoRV32 Linker Map
+# Generated: 2026-05-10T17:17:49
+
+## Memory Regions
+  mem      0x00000000 .. 0x00001fff  (8192 bytes, rwx)
+
+## Section Layout
+  .text  (mem=mem)
+    0x00000000  size=92    B   main.o
+    0x0000005c  size=208   B   uart_lib.o
+  .data  (mem=mem)
+    0x0000012c  size=48    B   main.o
+
+## Global Symbols
+  0x00000000  _start                   [.text]   main.o
+  0x0000005c  uart_putc                [.text]   uart_lib.o
+  0x0000006c  uart_puts                [.text]   uart_lib.o
+  0x000000b0  uart_put_hex32           [.text]   uart_lib.o
+
+## Entry Point
+  0x00000000

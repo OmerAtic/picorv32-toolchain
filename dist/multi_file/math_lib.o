@@ -1,0 +1,96 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "math_lib.s",
+  "timestamp": "2026-05-10T17:17:49",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 48,
+      "data": "3305b500678000003305b54067800000930200001383050063080300b382a2001303f3ffe31c03fe1385020067800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    },
+    {
+      "name": ".data",
+      "addr": 0,
+      "size": 8,
+      "data": "3a010000efbeadde",
+      "align": 4,
+      "flags": [
+        "WRITE",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "add_func",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 19
+    },
+    {
+      "name": "sub_func",
+      "section": ".text",
+      "value": 8,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 26
+    },
+    {
+      "name": "mul_func",
+      "section": ".text",
+      "value": 16,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 35
+    },
+    {
+      "name": "mul_loop",
+      "section": ".text",
+      "value": 28,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 39
+    },
+    {
+      "name": "mul_done",
+      "section": ".text",
+      "value": 40,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 43
+    },
+    {
+      "name": "pi_x100",
+      "section": ".data",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 54
+    },
+    {
+      "name": "magic_number",
+      "section": ".data",
+      "value": 4,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 57
+    }
+  ],
+  "relocations": []
+}

@@ -1,0 +1,166 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "main.s",
+  "timestamp": "2026-05-10T17:17:49",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 128,
+      "data": "37210000130101ff37040010130404001305f0009305700097000000e78000002320a4001305f0009305700097000000e78000002320a400130570009305600097000000e78000002320a400b70200009382020003a502002320a400b70200009382020003a502002320a400b7020010938282001305100023a0a2006f000000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "add_func",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 18
+    },
+    {
+      "name": "sub_func",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 19
+    },
+    {
+      "name": "mul_func",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 20
+    },
+    {
+      "name": "pi_x100",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 21
+    },
+    {
+      "name": "magic_number",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 22
+    },
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 24
+    },
+    {
+      "name": "hang",
+      "section": ".text",
+      "value": 124,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 62
+    }
+  ],
+  "relocations": [
+    {
+      "section": ".text",
+      "offset": 24,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "add_func",
+      "addend": 0,
+      "line": 31
+    },
+    {
+      "section": ".text",
+      "offset": 28,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "add_func",
+      "addend": 0,
+      "line": 31
+    },
+    {
+      "section": ".text",
+      "offset": 44,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "sub_func",
+      "addend": 0,
+      "line": 37
+    },
+    {
+      "section": ".text",
+      "offset": 48,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "sub_func",
+      "addend": 0,
+      "line": 37
+    },
+    {
+      "section": ".text",
+      "offset": 64,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "mul_func",
+      "addend": 0,
+      "line": 43
+    },
+    {
+      "section": ".text",
+      "offset": 68,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "mul_func",
+      "addend": 0,
+      "line": 43
+    },
+    {
+      "section": ".text",
+      "offset": 76,
+      "type": "R_RISCV_HI20",
+      "symbol": "pi_x100",
+      "addend": 0,
+      "line": 47
+    },
+    {
+      "section": ".text",
+      "offset": 80,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "pi_x100",
+      "addend": 0,
+      "line": 47
+    },
+    {
+      "section": ".text",
+      "offset": 92,
+      "type": "R_RISCV_HI20",
+      "symbol": "magic_number",
+      "addend": 0,
+      "line": 52
+    },
+    {
+      "section": ".text",
+      "offset": 96,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "magic_number",
+      "addend": 0,
+      "line": 52
+    }
+  ]
+}

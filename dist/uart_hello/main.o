@@ -1,0 +1,218 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "main.s",
+  "timestamp": "2026-05-10T17:17:49",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 92,
+      "data": "37210000130101ff370500001305050097000000e7800000370500001305050097000000e780000037050000130505000325050097000000e78000001305a00097000000e7800000b7020010938282001305100023a0a2006f000000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    },
+    {
+      "name": ".data",
+      "addr": 0,
+      "size": 48,
+      "data": "48656c6c6f2c20465047412066726f6d205069636f52563332210a00636f756e746572203d20307800000000efbeadde",
+      "align": 4,
+      "flags": [
+        "WRITE",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "uart_putc",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 14
+    },
+    {
+      "name": "uart_puts",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 15
+    },
+    {
+      "name": "uart_put_hex32",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 16
+    },
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 18
+    },
+    {
+      "name": "hang",
+      "section": ".text",
+      "value": 88,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 43
+    },
+    {
+      "name": "greeting",
+      "section": ".data",
+      "value": 0,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 51
+    },
+    {
+      "name": "counter_label",
+      "section": ".data",
+      "value": 28,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 54
+    },
+    {
+      "name": "magic",
+      "section": ".data",
+      "value": 44,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 58
+    }
+  ],
+  "relocations": [
+    {
+      "section": ".text",
+      "offset": 8,
+      "type": "R_RISCV_HI20",
+      "symbol": "greeting",
+      "addend": 0,
+      "line": 22
+    },
+    {
+      "section": ".text",
+      "offset": 12,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "greeting",
+      "addend": 0,
+      "line": 22
+    },
+    {
+      "section": ".text",
+      "offset": 16,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "uart_puts",
+      "addend": 0,
+      "line": 23
+    },
+    {
+      "section": ".text",
+      "offset": 20,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "uart_puts",
+      "addend": 0,
+      "line": 23
+    },
+    {
+      "section": ".text",
+      "offset": 24,
+      "type": "R_RISCV_HI20",
+      "symbol": "counter_label",
+      "addend": 0,
+      "line": 26
+    },
+    {
+      "section": ".text",
+      "offset": 28,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "counter_label",
+      "addend": 0,
+      "line": 26
+    },
+    {
+      "section": ".text",
+      "offset": 32,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "uart_puts",
+      "addend": 0,
+      "line": 27
+    },
+    {
+      "section": ".text",
+      "offset": 36,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "uart_puts",
+      "addend": 0,
+      "line": 27
+    },
+    {
+      "section": ".text",
+      "offset": 40,
+      "type": "R_RISCV_HI20",
+      "symbol": "magic",
+      "addend": 0,
+      "line": 30
+    },
+    {
+      "section": ".text",
+      "offset": 44,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "magic",
+      "addend": 0,
+      "line": 30
+    },
+    {
+      "section": ".text",
+      "offset": 52,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "uart_put_hex32",
+      "addend": 0,
+      "line": 32
+    },
+    {
+      "section": ".text",
+      "offset": 56,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "uart_put_hex32",
+      "addend": 0,
+      "line": 32
+    },
+    {
+      "section": ".text",
+      "offset": 64,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "uart_putc",
+      "addend": 0,
+      "line": 36
+    },
+    {
+      "section": ".text",
+      "offset": 68,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "uart_putc",
+      "addend": 0,
+      "line": 36
+    }
+  ]
+}
