@@ -1,0 +1,4 @@
+# PicoRV32 Assembler - Bagimliliklar
+# Temel assembler icin ek paket gerekmez (sadece Python 3 standart kutuphanesi)
+# Test icin:
+pytest>=7.0

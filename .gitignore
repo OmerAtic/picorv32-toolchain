@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+.DS_Store
+# Gowin/FPGA ara ciktilar
+impl/
+*.vcd
+build/
+*.o
+*.out
+*.bin
+__MACOSX/
+.DS_Store
+# dist/ teslim paketi: icindeki .o/.bin dosyalari ignore edilmesin
+!dist/**
